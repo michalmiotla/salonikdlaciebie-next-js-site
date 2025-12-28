@@ -1,0 +1,12 @@
+* {
+	--font-main-color: #000000;
+	--font-second-color: #ffffff;
+	--background-main-color: #ffffff;
+	--theme-main-color: #f7db00;
+	/* --background-second-color: #9dc089; */
+	/* --footer-main-color: #38563e;
+	--table-main-color: #5d804a; */
+	--button-main-color: #df0024;
+	--button-hover-color: #a51a31;
+	/* --box-low-opacity: rgb(255, 255, 255, 0.1); */
+}

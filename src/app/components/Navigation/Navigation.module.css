@@ -1,0 +1,174 @@
+.navSection {
+	position: relative;
+
+	.navigation {
+		z-index: 100;
+		position: fixed;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+
+		.mobile_top {
+			z-index: 100;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			background-color: var(--background-main-color);
+		}
+
+		.logo_mobile,
+		.logo {
+			z-index: 100;
+			margin: 1rem;
+
+			img {
+				cursor: pointer;
+			}
+		}
+
+		.logo {
+			display: none;
+		}
+
+		.menu {
+			z-index: 100;
+
+			.burger,
+			.close {
+				max-width: 2.5rem;
+				max-height: 2.5rem;
+				margin: 1rem;
+				cursor: pointer;
+			}
+		}
+
+		.navbar {
+			display: none;
+		}
+
+		.navbar_mobile,
+		.navbar_mobile_active {
+			position: fixed;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			width: 100%;
+			transition: transform 1s ease-in-out;
+			background-color: var(--background-main-color);
+
+			ul {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+
+				li {
+					padding: 3rem 1rem;
+				}
+			}
+		}
+
+		.navbar_mobile {
+			transform: translateX(100%);
+		}
+	}
+}
+.navlinks {
+	position: relative;
+	padding-bottom: 1rem;
+	font-size: clamp(2.8rem, 2.871vw + 1.795rem, 4rem);
+	font-weight: 400;
+	border-bottom: 2px solid transparent;
+	cursor: pointer;
+}
+
+.navlinks::before,
+.navlinks::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	bottom: 0;
+	border-bottom: 5px solid var(--theme-main-color);
+	transition: all 0.3s;
+}
+
+.navlinks::before {
+	left: 50%;
+}
+.navlinks::after {
+	right: 50%;
+}
+
+.navlinks:hover::before,
+.navlinks:hover::after {
+	width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+	.navSection {
+		.navigation {
+			position: relative;
+
+			.mobile_top {
+				display: none;
+			}
+
+			.logo_mobile {
+				display: none;
+			}
+
+			.menu,
+			.navbar_mobile,
+			.navbar_mobile_active {
+				display: none;
+			}
+
+			.navbar {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+
+				.logo {
+					display: block;
+
+					img {
+						max-width: 25rem;
+						margin-right: 5rem;
+					}
+				}
+
+				ul {
+					display: flex;
+					width: 100%;
+					justify-content: space-around;
+					align-items: center;
+
+					li {
+						.navlinks {
+							font-size: clamp(1.4rem, 0.633vw + 0.914rem, 1.8rem);
+							border: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.navSection {
+		.navigation {
+			.navbar {
+				.logo {
+					padding-left: 1rem;
+					img {
+						margin-right: 20rem;
+					}
+				}
+			}
+		}
+	}
+}
