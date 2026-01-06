@@ -21,10 +21,10 @@
 	.news_container {
 		position: relative;
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-        width: 100%;
+		width: 100%;
+		flex-wrap: wrap;
 	}
 }
 
@@ -34,6 +34,16 @@
 			hr {
 				border-top: 10px solid var(--theme-main-color);
 			}
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.news_section {
+		.news_container {
+			justify-content: space-between;
+			flex-wrap: nowrap;
+			gap: 2rem;
 		}
 	}
 }
