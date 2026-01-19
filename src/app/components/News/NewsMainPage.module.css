@@ -39,7 +39,7 @@
 	}
 
 	.description {
-		border: 2px solid var(--theme-main-color);
+		border: 1px solid grey;
 		border-top: none;
 
 		p {
@@ -61,7 +61,7 @@
 @media screen and (min-width: 768px) {
 	.news {
 		.photo {
-            height: 25rem;
+			height: 25rem;
 			p {
 				font-size: clamp(2.4rem, 1.266vw + 1.428rem, 3.2rem);
 			}
