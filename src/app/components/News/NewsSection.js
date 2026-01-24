@@ -3,6 +3,7 @@ import Container from '../Container/Container'
 import NewsMainPage from './NewsMainPage'
 import styles from './NewsSection.module.css'
 import SectionTitle from '../SectionTitle/SectionTitle'
+import SectionLink from '../SectionLink/SectionLink'
 
 export default function NewsSection() {
 	return (
@@ -12,9 +13,7 @@ export default function NewsSection() {
 				<div className={styles.news_container}>
 					<NewsMainPage />
 				</div>
-				<Link className={styles.news_more} href=''>
-					aktualności &gt;&gt;&gt;
-				</Link>
+				<SectionLink section={'aktualności'} link={'/aktualnosci'} />
 			</section>
 		</Container>
 	)

@@ -1,4 +1,4 @@
-.news_section {
+.services_section {
 	position: relative;
 	width: 100%;
 	display: flex;
@@ -6,22 +6,12 @@
 	margin-top: 5rem;
 	padding: 2rem;
 
-	.news_container {
+	.services_container {
 		position: relative;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		flex-wrap: wrap;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	.news_section {
-		.news_container {
-			justify-content: space-between;
-			flex-wrap: nowrap;
-			gap: 2rem;
-		}
 	}
 }

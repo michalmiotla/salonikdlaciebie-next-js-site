@@ -1,10 +1,10 @@
 import Container from '../Container/Container'
-import styles from './Description.module.css'
+import styles from './Subheadings.module.css'
 
-export default function Description() {
+export default function Subheadings() {
 	return (
 		<Container>
-			<div className={styles.description}>
+			<div className={styles.subheadings}>
 				<h2 className={styles.second_heading}>
 					Strona dla klientów Saloników Prasowych <strong>Kolporter</strong>.
 				</h2>

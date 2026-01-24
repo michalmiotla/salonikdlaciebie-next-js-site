@@ -3,12 +3,24 @@
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	margin-top: 5rem;
-	padding: 2rem;
+	margin-block: 2rem;
 
 	.image_box {
 		position: relative;
 		width: 100%;
-		aspect-ratio: 5 /1;
+		aspect-ratio: 6 /1;
+		box-shadow: none;
+		transition: box-shadow 0.5s;
+	}
+
+	.image_box:hover {
+		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+		cursor: pointer;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.promo {
+		margin-block: 5rem;
 	}
 }
