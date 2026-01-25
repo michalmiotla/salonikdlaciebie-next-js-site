@@ -23,13 +23,13 @@
 }
 
 @media screen and (min-width: 576px) {
-	.description {
+	.subheadings {
 		padding: 3rem;
 	}
 }
 
 @media screen and (min-width: 1024px) {
-	.description {
+	.subheadings {
 		padding-inline: 20%;
 	}
 }
