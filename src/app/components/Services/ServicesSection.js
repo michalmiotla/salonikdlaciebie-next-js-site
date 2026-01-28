@@ -19,12 +19,12 @@ export default function SercivesSection() {
 						<p>Sprawdź, jakie usługi zrealizujesz w naszych punktach!</p>
 					</div>
 					<div className={styles.services}>
-						<Service />
-						<Service />
-						<Service />
-						<Service />
-						<Service />
-						<Service />
+						<Service icon={'/bill.svg'} title={'Płatności rachunków'} />
+						<Service icon={'/box.svg'} title={'Obsługa paczek'} />
+						<Service icon={'/card.svg'} title={'Doładowania biletów miejskich'} />
+						<Service icon={'/sim.svg'} title={'Rejestracja kart SIM'} />
+						<Service icon={'/receipt.svg'} title={'Doładowania telefoniczne'} />
+						<Service icon={'/game.svg'} title={'Doładowania do gier'} />
 					</div>
 				</div>
 				<SectionLink section={'usługi'} link={'uslugi'} />
