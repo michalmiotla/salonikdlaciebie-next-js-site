@@ -1,0 +1,27 @@
+.assortment_section {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 5rem;
+	padding: 2rem;
+
+	.assortment_container {
+		display: grid;
+		width: 100%;
+		grid-template-columns: 25% 75%;
+		align-items: stretch;
+
+		.list {
+			background-color: aquamarine;
+
+			li {
+				height: 5rem;
+			}
+		}
+
+		.details {
+			background-color: bisque;
+		}
+	}
+}

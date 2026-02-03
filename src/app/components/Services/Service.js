@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './Service.module.css'
 
-export default function Service({ icon, title }) {
+export default function Service({ icon, title, description }) {
 	return (
 		<div className={styles.service}>
 			<div className={styles.image_container}>
@@ -11,10 +11,7 @@ export default function Service({ icon, title }) {
 				<p className={styles.title}>{title}</p>
 			</div>
 			<div className={styles.description_container}>
-				<p>
-					Opis ada sdasdd adaads a sd asd adaads asdsad asd asd asd a defaultd asd sa d asdsad asdasdadas da dad ad
-					adsasd asd asdadsasd daasdasd d sd sada aasdasdasdasads
-				</p>
+				<p>{description}</p>
 			</div>
 		</div>
 	)
