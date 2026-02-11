@@ -10,7 +10,7 @@
 		margin-block: 5rem;
 		display: grid;
 		width: 100%;
-		grid-template-columns: 30% 1fr;
+		grid-template-columns: 35% 1fr;
 		align-items: stretch;
 		gap: 3rem;
 		padding: 1rem;
@@ -30,21 +30,19 @@
 					justify-content: space-between;
 					align-items: center;
 					height: 5rem;
-					/* box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 1); */
 					transition: scale 0.3s ease-in-out;
 					border-bottom: 1px solid var(--theme-main-color);
 
 					.button_details {
 						width: 75%;
 						height: 100%;
-						padding-left: 1rem;
 						display: flex;
 						justify-content: start;
 						align-items: center;
 
 						p {
 							display: inline-block;
-							margin-left: 1rem;
+							margin-left: 2rem;
 							font-size: clamp(2rem, 1.914vw + 1.33rem, 2.8rem);
 						}
 					}
@@ -73,8 +71,8 @@
 			}
 		}
 
-		.details {
+		/* .details {
 			box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 1);
-		}
+		} */
 	}
 }

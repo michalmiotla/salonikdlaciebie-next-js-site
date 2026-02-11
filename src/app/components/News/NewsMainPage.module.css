@@ -39,8 +39,7 @@
 	}
 
 	.description {
-		border: 1px solid grey;
-		border-top: none;
+		border-bottom: 2px solid var(--theme-main-color);
 
 		p {
 			font-size: clamp(1.2rem, 0.381vw + 1.067rem, 1.6rem);
@@ -55,7 +54,6 @@
 
 .news:hover .photo .img {
 	transform: scale(1.05);
-	
 }
 
 @media screen and (min-width: 768px) {
