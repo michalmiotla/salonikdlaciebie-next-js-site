@@ -5,7 +5,7 @@ const assortmentData = [
 		icon: '/press.svg',
 		alt: 'press icon',
 		description:
-			'U nas zawsze znajdziesz coś do poczytania — od codziennych dzienników po inspirujące magazyny i kolekcje. Oferujemy tytuły o hobby, rozrywce, publicystyce oraz prasę dziecięcą. Niezależnie od tego, czy szukasz chwili relaksu, czy konkretnych informacji, bogaty wybór pozwoli łatwo znaleźć coś dla siebie.',
+			'Nasze Saloniki są miejscem, w którym zawsze znajdziesz coś do poczytania — od codziennych dzienników po inspirujące magazyny i specjalistyczne wydania. Niezależnie od tego, czy szukasz chwili relaksu, czy konkretnych informacji, bogaty wybór pozwoli łatwo znaleźć coś dla siebie. Twoje ulubione numery możesz również zamawiać w ramach prenumeraty.',
 		hashtags: ['dzienniki', 'kolekcje', 'publicystyka', 'rozrywka', 'dziecięce'],
 	},
 	{
@@ -14,7 +14,7 @@ const assortmentData = [
 		icon: '/flame.svg',
 		alt: 'flame icon',
 		description:
-			'Dostępne są najpopularniejsze marki papierosów oraz szeroki wybór wyrobów tytoniowych. Dbamy o wysoką dostępność produktów i regularne dostawy. W ofercie znajdują się również tytonie i cygaretki w różnych wariantach — szybko i bez zbędnych komplikacji.',
+			'W naszych punktach dostępne są najpopularniejsze marki papierosów oraz szeroki wybór wyrobów tytoniowych. Dbamy o wysoką dostępność produktów i regularne dostawy, dzięki czemu każdy użytkownik będzie w stanie znaleźć u nas coś dla siebie. W ofercie znajdują się również tytonie i cygaretki w różnych wariantach.',
 		hashtags: ['papierosy', 'tytonie', 'cygaretki', 'cygara', 'tabaki'],
 	},
 	{
@@ -23,7 +23,7 @@ const assortmentData = [
 		icon: '/battery.svg',
 		alt: 'battery icon',
 		description:
-			'Jesteśmy na bieżąco z nowościami w kategorii produktów nowatorskich. Oferujemy wkłady i liquidy zgodnie z obowiązującymi przepisami oraz aktualnymi trendami. Regularnie aktualizujemy asortyment, aby zapewnić dostęp do najnowszych rozwiązań w jednym miejscu.',
+			'Jesteśmy na bieżąco z nowościami w kategorii produktów nowatorskich. Oferujemy wkłady i liquidy zgodne z obowiązującymi przepisami oraz aktualnymi trendami. Regularnie aktualizujemy asortyment, aby zapewnić dostęp do najnowszych rozwiązań w jednym miejscu.',
 		hashtags: ['liquidy', 'wkłady tytoniowe', 'woreczki nikotynowe'],
 	},
 	{
@@ -32,7 +32,7 @@ const assortmentData = [
 		icon: '/add.svg',
 		alt: 'battery icon',
 		description:
-			'Wszystko, czego potrzeba w jednym miejscu — zapalniczki, filtry, bibułki czy nabijarki. Oferujemy również lufki szklane w różnych wariantach. Szeroki wybór i stała dostępność sprawiają, że szybko znajdziesz potrzebne akcesoria.',
+			'Mamy wszystko, czego potrzeba, w jednym miejscu — m. in. zapalniczki, również krzesiwowe i żarowe, krótkie i długie bibułki z filtrami lub bez, filtry o różnych grubościach, nabijarki do gilz itp. Szeroki wybór i stała dostępność sprawiają, że szybko znajdziesz niezbędne akcesoria.',
 		hashtags: ['zapalniczki', 'filtry', 'bibułki', 'nabijarki', 'lufki szklane'],
 	},
 	{
@@ -41,7 +41,7 @@ const assortmentData = [
 		icon: '/confetti.svg',
 		alt: 'confetti icon',
 		description:
-			'Kartki, torebki i zaproszenia na każdą okazję — od urodzin po wyjątkowe jubileusze. Duży wybór i różne wzory pozwalają dopasować coś idealnego do charakteru wydarzenia. To szybki sposób, by nadać prezentowi osobisty akcent.',
+			'Kartki, torebki i zaproszenia na każdą okazję — od urodzin po wyjątkowe wydarzenia, takie jak chrzest, Komunia Święta, 18-stka itp. Duży wybór i różne wzory pozwalają dopasować coś idealnego do charakteru wydarzenia. To szybki sposób, by nadać głównemu prezentowi osobisty akcent.',
 		hashtags: ['kartki', 'zaproszenia', 'torebki'],
 	},
 	{
@@ -50,7 +50,7 @@ const assortmentData = [
 		icon: '/gift.svg',
 		alt: 'gift icon',
 		description:
-			'Nie wiesz, co wybrać na prezent? Karty podarunkowe z kategorii gaming, muzyka, filmy czy moda to zawsze trafiony wybór. To praktyczne i wygodne rozwiązanie, które daje swobodę wyboru obdarowanej osobie.',
+			'Karty podarunkowe to strzał w "10", gdy nie masz pomysłu na prezent, lub chcesz coś "dołożyć" do upominku. To praktyczne i wygodne rozwiązanie, które daje swobodę wyboru obdarowanej osobie. W ofercie posiadamy karty m. in. do Netflixa, Google Play, Steama, Allegro i wiele, wiele więcej.',
 		hashtags: ['gaming', 'muzyka', 'filmy', 'moda'],
 	},
 	{
@@ -59,7 +59,7 @@ const assortmentData = [
 		icon: '/ball.svg',
 		alt: 'ball icon',
 		description:
-			'Kolorowe figurki, maskotki, komiksy i karty kolekcjonerskie — coś dla małych i dużych fanów popkultury. Asortyment podąża za trendami i jest zawsze „na czasie”. Idealne na drobny prezent lub uzupełnienie kolekcji.',
+			'W naszych punktach najmłodsi klienci mają dostęp do szerokiego wyboru różnych typów zabawek, od kolorowych figurek, przez pluszaki i maskotki, po komiksy i karty kolekcjonerskie. Asortyment podąża za trendami i jest zawsze „na czasie”. Idealne na drobny prezent lub uzupełnienie kolekcji.',
 		hashtags: ['karty kolekcjonerskie', 'figurki', 'maskotki', 'komiksy'],
 	},
 	{
@@ -68,7 +68,7 @@ const assortmentData = [
 		icon: '/bottle.svg',
 		alt: 'bottle icon',
 		description:
-			'Masz ochotę na coś słodkiego albo szybką przekąskę? Oferujemy słodycze, przekąski słone, gumy do żucia i napoje — wszystko szybko i pod ręką. Idealne rozwiązanie w biegu lub na małą przerwę w ciągu dnia.',
+			'Gdy masz ochotę na coś słodkiego albo szybką przekąskę, nasze saloniki spieszą z pomocą! Oferujemy słodycze, przekąski, gumy do żucia i napoje — wszystko szybko i pod ręką. Idealne rozwiązanie w biegu, lub na małą przerwę w ciągu dnia.',
 		hashtags: ['słodycze', 'słone', 'gumy do żucia', 'napoje'],
 	},
 	{
@@ -77,17 +77,17 @@ const assortmentData = [
 		icon: '/pills.svg',
 		alt: 'pills icon',
 		description:
-			'Czasem potrzebny jest szybki ratunek — dlatego oferujemy podstawowe produkty dostępne bez recepty. Znajdziesz tu środki przeciwbólowe, plastry oraz prezerwatywy w różnych wariantach. Wszystko wygodnie i od ręki.',
+			'Czasem potrzebny jest szybki ratunek — dlatego oferujemy podstawowe produkty dostępne bez recepty. Znajdziesz w naszych punktach m.in. środki przeciwbólowe, plastry oraz prezerwatywy w różnych wariantach. Wszystko wygodnie i od ręki.',
 		hashtags: ['przeciwbólowe', 'prezerwatywy', 'plastry'],
 	},
 
 	{
 		index: 9,
-		title: 'Biurowe',
+		title: 'Biurowe / szkolne',
 		icon: '/document.svg',
 		alt: 'document icon',
 		description:
-			'Szkoła, praca, organizacja dokumentów — mamy to, czego potrzebujesz. Zeszyty, teczki na dokumenty, okładki, koszulki i spinacze dostępne są na miejscu. Szybko uzupełnisz brakujące artykuły bez specjalnej wyprawy do sklepu papierniczego.',
+			'Szkoła, praca, organizacja dokumentów — mamy to, czego potrzebujesz. Szybko uzupełnisz brakujące artykuły bez specjalnej wyprawy do sklepu papierniczego. Mamy w ofercie m.in zeszyty we wszystkich najpopularniejszych rodzajach i grubościach, papierowe i plastikowe teczki na dokumenty oraz okładki i koszulki.',
 		hashtags: ['zeszyty', 'teczki na dokumenty', 'okładki', 'koszulki', 'spinacze'],
 	},
 	{
@@ -96,7 +96,7 @@ const assortmentData = [
 		icon: '/glasses.svg',
 		alt: 'glasses icon',
 		description:
-			'Małe rzeczy, które potrafią ucieszyć — magnesy, breloki czy praktyczne akcesoria samochodowe. W ofercie dostępne są także okulary i inne drobne dodatki. Idealne jako upominek albo coś „na szybko”.',
+			'Małe rzeczy, które potrafią ucieszyć — to z pewnością znajdziesz w naszych Salonikach. Mamy m.in. magnesy na lodówkę (imienne, lokalne, ze znakami zodiaku), breloki, okulary do czytania i przeciwsłonczne oraz akcesoria samochodowe, takie jak ładowarki lub uchwyty. Idealne jako upominek albo coś „na szybko”.',
 		hashtags: ['magnesy', 'okulary', 'breloki', 'akcesoria samochodowe'],
 	},
 	{
@@ -105,7 +105,7 @@ const assortmentData = [
 		icon: '/sim.svg',
 		alt: 'sim icon',
 		description:
-			'Potrzebna ładowarka, kabel lub słuchawki? W kategorii GSM znajdziesz najważniejsze akcesoria oraz karty SIM popularnych operatorów. To szybkie i wygodne rozwiązanie, gdy Twój telefon potrzebuje wsparcia.',
+			'Potrzebna ładowarka sieciowa, kabel lub słuchawki? W dziale GSM znajdziesz najważniejsze akcesoria oraz karty SIM najpopularniejszych polskich operatorów. To szybkie i wygodne rozwiązanie, gdy Twój telefon potrzebuje wsparcia.',
 		hashtags: ['ładowarki', 'słuchawki', 'kable', 'karty SIM'],
 	},
 	{
@@ -114,7 +114,7 @@ const assortmentData = [
 		icon: '/bus.svg',
 		alt: 'bus icon',
 		description:
-			'Bilety komunikacji miejskiej, PKP czy na mecze kupisz wygodnie w jednym miejscu. Bez zbędnych formalności i dodatkowych przystanków. Załatw wszystko przy okazji codziennych zakupów.',
+			'Bilety komunikacji miejskiej, PKP lub na mecz ulubionej drużyny kupisz wygodnie w jednym miejscu, bez zbędnych formalności i dodatkowych przystanków. W wybranych punktach możesz również doładować swoją kartę miejską. Załatw wszystko przy okazji codziennych zakupów.',
 		hashtags: ['bilety komunikacji miejskiej', 'bilety PKP', 'bilety na mecze'],
 	},
 ]

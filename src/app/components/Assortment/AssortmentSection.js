@@ -9,6 +9,7 @@ import { useState } from 'react'
 
 export default function AssortmentSection() {
 	const [index, setIndex] = useState(0)
+	const [isVisible, setIsVisible] = useState(true)
 
 	return (
 		<Container>
@@ -19,9 +20,15 @@ export default function AssortmentSection() {
 						<ul>
 							{assortmentData.map(assortment => (
 								<li
+									className={`${styles.item} ${index === assortment.index ? styles.item_active : ''}`}
 									key={assortment.index}
 									onClick={() => {
-										setIndex(assortment.index)
+										setIsVisible(false)
+
+										setTimeout(() => {
+											setIndex(assortment.index)
+											setIsVisible(true)
+										}, 500)
 									}}>
 									<div className={styles.button_details}>
 										<Image alt={assortment.alt} src={assortment.icon} width={40} height={40}></Image>
@@ -39,7 +46,7 @@ export default function AssortmentSection() {
 							))}
 						</ul>
 					</div>
-					<div className={styles.details}>
+					<div className={`${styles.details} ${!isVisible ? styles.detailsHidden : ''}`}>
 						<Image
 							alt={assortmentData[index].alt}
 							src={assortmentData[index].icon}
