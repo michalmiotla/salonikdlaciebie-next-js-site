@@ -9,7 +9,7 @@ export default function MainPage() {
 	return (
 		<>
 			<Hero />
-			<Subheadings />
+			{/* <Subheadings /> */}
 			<NewsSection />
 			<PromoSection />
 			<SercivesSection />
