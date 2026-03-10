@@ -23,13 +23,13 @@ export default function Hero() {
 		},
 	]
 
-	useEffect(() => {
-		const interval = setInterval(() => {
-			setCurrentSlide(prev => (prev + 1) % slides.length)
-		}, 5000) // zmiana co 5s
+	// useEffect(() => {
+	// 	const interval = setInterval(() => {
+	// 		setCurrentSlide(prev => (prev + 1) % slides.length)
+	// 	}, 5000) // zmiana co 5s
 
-		return () => clearInterval(interval)
-	}, [])
+	// 	return () => clearInterval(interval)
+	// }, [])
 
 	const slide = slides[currentSlide]
 
@@ -41,13 +41,14 @@ export default function Hero() {
 						{currentSlide === 0 ? (
 							<>
 								<h1 className={styles.title}>{slides[0].heading}</h1>
-								<Button title={'Sprawdź aktualności'} />
+								<Button color={'yellow'} title={'sprawdź aktualności'} />
+								<Button color={'white'} title={'zobacz promocje'} />
 							</>
 						) : (
 							<>
 								<h2>{slides[1].headingOne}</h2>
 								<h2>{slides[1].headingTwo}</h2>
-								<Button title={'Znajdź Salonik'} />
+								<Button title={'znajdź salonik'} />
 							</>
 						)}
 					</div>

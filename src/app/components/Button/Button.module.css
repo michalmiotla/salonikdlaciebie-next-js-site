@@ -1,0 +1,8 @@
+.button {
+	font-size: 3.2rem;
+	background-color: var(--theme-main-color);
+	color: white;
+	padding: 1rem 4rem;
+	border: none;
+	box-shadow: 5px 5px 10px -10px rgba(0, 0, 0, 1);
+}
