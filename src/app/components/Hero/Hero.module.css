@@ -6,6 +6,7 @@
 	padding-top: 122px;
 	min-height: 600px;
 	max-height: 1280px;
+	background-image: linear-gradient(135deg, #f7da0000 0%, #f7da0000 20%, #f7db003a 50%, #f7db001a 100%);
 
 	/* background-color: rgba(247, 219, 0, 0.1); */
 	overflow: hidden;
@@ -22,25 +23,23 @@
 
 		.main_titles {
 			position: relative;
-			width: 35%;
-			height: 100%;
+			width: 100%;
 			display: flex;
-			flex-direction: column;
+			flex-direction: row;
+			flex-wrap: wrap;
 			justify-content: space-around;
 			align-items: start;
 
 			.title {
 				display: block;
-				font-size: 6.4rem;
-				/* font-size: clamp(3.2rem, 7.656vw + 0.521rem, 6.4rem); */
+				font-size: clamp(2.4rem, 3.81vw + 1.067rem, 6.4rem);
+				width: 75%;
+				text-align: center;
 				color: black;
-				/* text-transform: uppercase; */
 				font-weight: 700;
-
-				/* text-shadow: -1px 5px 5px rgb(0, 0, 0); */
-				/* font-size: clamp(48px, 5vw, 72px); */
 				line-height: 0.95;
-				margin-bottom: 8rem;
+				padding: 2rem;
+				margin-bottom: 5rem;
 				opacity: 0;
 				animation: heroText 3s ease forwards;
 			}
@@ -74,12 +73,15 @@
 .hero::before {
 	content: '';
 	position: absolute;
+	left: 0;
 	/* right: 300px;
 	bottom: -100px; */
-	width: 100%;
+	width: 500%;
 	height: 100%;
-	background-image: linear-gradient(to right, #f7da0000 0%, #f7db002a 100%);
-
+	opacity: 0.08;
+	background-image:
+		repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 40px), repeating-linear-gradient(#f7db0055, #f7db00);
+	animation: backgroundMove 30s ease-in-out infinite;
 	z-index: 0;
 }
 
@@ -113,27 +115,44 @@
 
 		.main {
 			flex-direction: row;
-			/* padding: 4rem; */
 
-			.title {
-				text-align: left;
-				/* font-size: clamp(6.4rem, 2.128vw + 4.221rem, 7.2rem); */
+			.main_titles {
+				flex-direction: column;
+				width: 40%;
+				height: 100%;
+
+				.title {
+					width: 100%;
+					text-align: left;
+					padding: 0;
+				}
 			}
 
-			.main_image {
+			.main_image_box {
+				width: 60%;
+			}
+
+			/* .main_image {
 				width: 40rem;
 				height: calc(40rem * 3 / 8);
-			}
+			} */
 		}
 	}
 }
 
-/* @media screen and (min-width: 1130px) {
+@media screen and (min-width: 1200px) {
 	.hero {
 		.main {
+			.main_titles {
+				width: 35%;
+			}
+
+			.main_image_box {
+				width: 65%;
+			}
 		}
 	}
-} */
+}
 
 @keyframes scale-in-center {
 	0% {
@@ -165,5 +184,19 @@
 	100% {
 		opacity: 1;
 		transform: translateY(0);
+	}
+}
+
+@keyframes backgroundMove {
+	0% {
+		left: 0;
+	}
+
+	50% {
+		left: 30%;
+	}
+
+	100% {
+		left: 0;
 	}
 }

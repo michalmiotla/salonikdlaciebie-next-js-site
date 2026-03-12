@@ -33,7 +33,7 @@ export default function Hero() {
 	useEffect(() => {
 		const interval = setInterval(() => {
 			setCurrentSlide(prev => (prev + 1) % slides.length)
-		}, 10000) // zmiana co 5s
+		}, 10000)
 
 		return () => clearInterval(interval)
 	}, [])
@@ -47,7 +47,7 @@ export default function Hero() {
 					<div className={styles.main_titles}>
 						{/* <Image className={styles.logo} src={Logo} alt='newsstand hero illustration' /> */}
 						<h1 className={styles.title}>Kolporter - twoje centrum informacji i drobnych przyjemności :)</h1>
-						<Button color={'yellow'} title={'sprawdź aktualności'} />
+						<Button color={'yellow'} title={'znajdź salonik'} />
 						<Button color={'white'} title={'zobacz promocje'} />
 
 						{/* {currentSlide === 0 ? (
