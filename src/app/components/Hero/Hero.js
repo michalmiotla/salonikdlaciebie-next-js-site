@@ -5,7 +5,6 @@ import styles from './Hero.module.css'
 import Image from 'next/image'
 import HeroNewsstand from '../../../../public/newsstand.svg'
 import HeroReading from '../../../../public/reading.svg'
-import HeroDiscount from '../../../../public/discount.svg'
 import HeroGaming from '../../../../public/gaming.svg'
 import { useEffect, useState } from 'react'
 import Button from '../Button/Button'
@@ -17,7 +16,6 @@ export default function Hero() {
 	const slides = [
 		HeroNewsstand,
 		HeroReading,
-		HeroDiscount,
 		HeroGaming,
 		// {
 		// 	image: HeroNewsstand,
@@ -46,7 +44,7 @@ export default function Hero() {
 				<div className={styles.main}>
 					<div className={styles.main_titles}>
 						{/* <Image className={styles.logo} src={Logo} alt='newsstand hero illustration' /> */}
-						<h1 className={styles.title}>Kolporter - twoje centrum informacji i drobnych przyjemności :)</h1>
+						<h1 className={styles.title}>KOLPORTER - twoje centrum informacji i drobnych przyjemności :)</h1>
 						<Button color={'yellow'} title={'znajdź salonik'} />
 						<Button color={'white'} title={'zobacz promocje'} />
 

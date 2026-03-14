@@ -12,7 +12,7 @@ const ubuntu = Ubuntu({
 
 export const metadata = {
 	title: 'salonikdlaciebie.pl',
-	description: 'Strona dla klientów sieci saloników prasowych "Kolporter"',
+	description: 'Strona dla klientów sieci Saloników Prasowych "Kolporter"',
 }
 
 export default function RootLayout({ children }) {
