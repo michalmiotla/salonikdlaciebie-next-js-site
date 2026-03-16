@@ -1,9 +1,12 @@
 import Image from 'next/image'
 import styles from './NewsMainPage.module.css'
-import newsData from '@/app/data/newsData'
+// import newsData from '@/app/data/newsData'
+import { getAllNews } from '@/app/data/news/news'
 
 export default function NewsMainPage() {
-	return newsData.slice(0, 2).map(news => (
+	const news = getAllNews()
+
+	return news.slice(0, 2).map(news => (
 		<div className={styles.news} key={news.index}>
 			<div className={styles.photo}>
 				<Image
@@ -18,7 +21,7 @@ export default function NewsMainPage() {
 				<p>{news.title}</p>
 			</div>
 			<div className={styles.description}>
-				<p>{news.description}</p>
+				<p>{news.excerpt}</p>
 			</div>
 		</div>
 	))

@@ -13,20 +13,7 @@ import Logo from '../../../../public/Kolporterbackground.png'
 export default function Hero() {
 	const [currentSlide, setCurrentSlide] = useState(0)
 
-	const slides = [
-		HeroNewsstand,
-		HeroReading,
-		HeroGaming,
-		// {
-		// 	image: HeroNewsstand,
-		// 	heading: 'Kolporter - twoje centrum informacji i drobnych przyjemności :)',
-		// },
-		// {
-		// 	image: HeroReading,
-		// 	headingOne: 'strona dla klientów Saloników Prasowych Kolporter',
-		// 	headingTwo: 'sprawdź promocje i odwiedź najbliższy punkt',
-		// },
-	]
+	const slides = [HeroNewsstand, HeroReading, HeroGaming]
 
 	useEffect(() => {
 		const interval = setInterval(() => {
