@@ -1,0 +1,9 @@
+.magazine {
+	position: relative;
+	width: 100%;
+	height: 30rem;
+	display: flex;
+	margin-top: 5rem;
+	padding: 2rem;
+	background-color: var(--theme-main-color);
+}

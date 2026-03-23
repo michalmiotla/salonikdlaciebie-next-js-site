@@ -34,20 +34,6 @@ export default function Hero() {
 						<h1 className={styles.title}>KOLPORTER - twoje centrum informacji i drobnych przyjemności :)</h1>
 						<Button color={'yellow'} title={'znajdź salonik'} />
 						<Button color={'white'} title={'zobacz promocje'} />
-
-						{/* {currentSlide === 0 ? (
-							<>
-								<h1 className={styles.title}>{slides[0].heading}</h1>
-								<Button color={'yellow'} title={'sprawdź aktualności'} />
-								<Button color={'white'} title={'zobacz promocje'} />
-							</>
-						) : (
-							<>
-								<h2>{slides[1].headingOne}</h2>
-								<h2>{slides[1].headingTwo}</h2>
-								<Button title={'znajdź salonik'} />
-							</>
-						)} */}
 					</div>
 					<div className={styles.main_image_box}>
 						<Image className={styles.main_image} src={slides[currentSlide]} alt='newsstand hero illustration' />

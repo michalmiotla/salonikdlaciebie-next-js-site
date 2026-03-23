@@ -55,15 +55,15 @@ export default function Navigation() {
 
 					<div className={styles.navbar}>
 						<div className={styles.logo}>
-							<a onClick={backToTop} to='/'>
+							<Link onClick={backToTop} href='/'>
 								<Image src={LOGO} alt='salonikdlaciebie.pl' />
-							</a>
+							</Link>
 						</div>
 						<ul>
 							<li>
-								<a onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} to='/oferta'>
+								<Link onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} href='/aktualnosci'>
 									aktualności
-								</a>
+								</Link>
 							</li>
 							<li>
 								<a onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} to='/pakiety'>
