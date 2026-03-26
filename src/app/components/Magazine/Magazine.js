@@ -7,8 +7,23 @@ export function Magazine() {
 		<Container>
 			<div className={styles.magazine}>
 				<div className={styles.description}>
-					<p className={styles.title}>Salonik dla Ciebie - bezpłatna gazetka proomcyjna</p>
-					<p className={styles.description}></p>
+					<p className={styles.title}>Salonik dla Ciebie - bezpłatna gazetka promocyjna</p>
+					<p className={styles.paragraph}>
+						W miesięczniku &quot;Salonik dla Ciebie&quot; znajdą Państwo m. in. informacje dotyczące najnowszych wydań
+						prasowych oraz promowanych kolekcji, aktualne oferty specjalne oraz ciekawostki związane z działalnością
+						firmy. Miesięcznik dostępny jest we wszystkich punktach sieci &quot;Kolporter&quot; oraz online, w formacie
+						PDF.
+					</p>
+				</div>
+				<div className={styles.arrow}>
+					<Image
+						className={styles.right}
+						alt='arrow right'
+						src='/right.svg'
+						fill
+						objectFit='contain'
+						objectPosition='center'
+					/>
 				</div>
 				<div className={styles.photo}>
 					<Image
@@ -16,7 +31,7 @@ export function Magazine() {
 						alt='salonikdlaciebie bezpłatna gazetka pdf'
 						src='/magazine.png'
 						fill
-						objectFit='cover'
+						objectFit='contain'
 						objectPosition='center'
 					/>
 				</div>
