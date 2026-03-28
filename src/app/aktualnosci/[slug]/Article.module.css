@@ -1,0 +1,9 @@
+.article_section {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding-top: 122px;
+	padding-inline: 2rem;
+	gap: 5rem;
+}

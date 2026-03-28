@@ -12,7 +12,6 @@ export default function NewsSubpage() {
 		<Container>
 			<div className={styles.news_subpage}>
 				<SectionTitle title={'aktualności'} />
-
 				{news.map(n => (
 					<Link key={n.slug} href={`/aktualnosci/${n.slug}`}>
 						<div className={styles.news} key={n.index}>
