@@ -1,6 +1,9 @@
 import Container from '@/app/components/Container/Container'
 import { getAllNews } from '@/app/data/news/news'
 import styles from './Article.module.css'
+import Image from 'next/image'
+import Link from 'next/link'
+import { MDXRemote } from 'next-mdx-remote/rsc'
 
 export async function generateStaticParams() {
 	const news = await getAllNews()
@@ -24,10 +27,46 @@ export default async function ArticlePage({ params }) {
 	return (
 		<Container>
 			<article className={styles.article_section}>
-				<h1>{article.title}</h1>
-				<p>{article.date}</p>
+				<div className={styles.titles}>
+					<div className={styles.breadcrumbs}>
+						<Link href={'/'}>
+							<p>strona główna</p>
+						</Link>
+						<p>&gt;&gt;&gt;</p>
+						<Link href={'/aktualnosci'}>
+							<p>aktualności</p>
+						</Link>
+						<p>&gt;&gt;&gt;</p>
+						<p>{article.title}</p>
+					</div>
 
-				<div>{article.content}</div>
+					<h2 className={styles.title}>{article.title}</h2>
+				</div>
+				<div className={styles.entry}>
+					<div className={styles.info}>
+						<p className={styles.date}>
+							<Image className={styles.img_right} alt='icon right' src='/right.svg' width={30} height={30}></Image>
+							{article.date}
+						</p>
+						<p className={styles.category}>
+							<Image className={styles.img_right} alt='icon right' src='/right.svg' width={30} height={30}></Image>
+							{article.category}
+						</p>
+						<p className={styles.excerpt}>{article.excerpt}</p>
+					</div>
+
+					<div className={styles.image_container}>
+						<Image
+							className={styles.img}
+							alt={article.title}
+							src={article.image}
+							fill
+							objectFit='cover'
+							objectPosition='center'
+						/>
+					</div>
+				</div>
+				<MDXRemote source={article.content} className={styles.content} />
 			</article>
 		</Container>
 	)
