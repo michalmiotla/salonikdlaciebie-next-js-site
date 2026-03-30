@@ -29,14 +29,14 @@ export default async function ArticlePage({ params }) {
 			<article className={styles.article_section}>
 				<div className={styles.titles}>
 					<div className={styles.breadcrumbs}>
-						<Link href={'/'}>
+						<Link className={styles.link} href={'/'}>
 							<p>strona główna</p>
 						</Link>
-						<p>&gt;&gt;&gt;</p>
-						<Link href={'/aktualnosci'}>
+						<p>/</p>
+						<Link className={styles.link} href={'/aktualnosci'}>
 							<p>aktualności</p>
 						</Link>
-						<p>&gt;&gt;&gt;</p>
+						<p>/</p>
 						<p>{article.title}</p>
 					</div>
 
@@ -44,15 +44,20 @@ export default async function ArticlePage({ params }) {
 				</div>
 				<div className={styles.entry}>
 					<div className={styles.info}>
+						<p className={styles.excerpt}>{article.excerpt}</p>
 						<p className={styles.date}>
-							<Image className={styles.img_right} alt='icon right' src='/right.svg' width={30} height={30}></Image>
+							<Image
+								className={styles.img_right}
+								alt='icon calendar'
+								src='/calendar.svg'
+								width={30}
+								height={30}></Image>
 							{article.date}
 						</p>
 						<p className={styles.category}>
-							<Image className={styles.img_right} alt='icon right' src='/right.svg' width={30} height={30}></Image>
+							<Image className={styles.img_right} alt='icon hashtag' src='/hashtag.svg' width={30} height={30}></Image>
 							{article.category}
 						</p>
-						<p className={styles.excerpt}>{article.excerpt}</p>
 					</div>
 
 					<div className={styles.image_container}>
