@@ -3,9 +3,11 @@
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	padding-top: 122px;
+	align-items: center;
+	padding-top: 8rem;
 	padding-inline: 2rem;
 	gap: 5rem;
+	border-bottom: 5px solid var(--theme-main-color);
 
 	.titles {
 		position: relative;
@@ -20,6 +22,7 @@
 			margin-bottom: 3rem;
 			font-size: 1.8rem;
 			color: var(--font-gray-color);
+
 			/* font-size: clamp(1.8rem, 1.435vw + 1.298rem, 2.4rem); */
 
 			.link {
@@ -81,6 +84,16 @@
 				border-radius: 12px;
 				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 			}
+
+			.source {
+				position: absolute;
+				font-size: 1.2rem;
+				bottom: 0;
+				width: 100%;
+				padding: 1rem;
+				text-align: left;
+				background-color: rgb(255, 255, 255, 0.8);
+			}
 		}
 
 		.excerpt::first-letter {
@@ -99,16 +112,88 @@
 
 	.content {
 		position: relative;
-		width: 50%;
-		align-self: center;
+		width: 100%;
+		max-width: 80rem;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		text-align: center;
+		/* text-align: center; */
 		font-size: 2rem;
+		padding-bottom: 2rem;
+
+		p {
+			font-size: 1.6rem;
+			line-height: 1.75;
+			color: var(--font-gray-color);
+			margin-bottom: 1.5rem;
+		}
+
+		p::first-letter {
+			margin-left: 3rem;
+		}
+
+		div {
+			background-color: rgb(247, 219, 0, 0.3);
+			padding: 1rem;
+			border-radius: 12px;
+			margin: 2rem 0;
+
+			p {
+				text-align: center;
+				font-weight: 700;
+				margin-bottom: 0;
+			}
+
+			p::first-letter {
+				margin-left: 0;
+			}
+		}
+
+		img {
+			position: relative;
+			width: 100%;
+			margin-top: 3rem;
+			border-radius: 12px;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+		}
+
+		blockquote {
+			font-style: italic;
+		}
 
 		h2 {
-			font-size: 4rem;
+			text-transform: uppercase;
+			margin-top: 3rem;
+			margin-bottom: 3rem;
+			font-weight: 700;
+			font-size: 2rem;
 		}
+	}
+}
+
+.recommended {
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 3rem;
+	/* margin-bottom: 3rem; */
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+.news_container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1024px) {
+	.news_container {
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		gap: 2rem;
 	}
 }

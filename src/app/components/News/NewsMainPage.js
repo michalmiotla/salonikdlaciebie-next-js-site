@@ -4,10 +4,12 @@ import styles from './NewsMainPage.module.css'
 import { getAllNews } from '@/app/data/news/news'
 import Link from 'next/link'
 
-export default function NewsMainPage() {
+export default function NewsMainPage({ currentSlug }) {
 	const news = getAllNews()
 
-	return news.slice(0, 2).map(news => (
+	const filteredNews = news.filter(item => item.slug !== currentSlug)
+
+	return filteredNews.slice(0, 2).map(news => (
 		<Link key={news.slug} href={`/aktualnosci/${news.slug}`}>
 			<div className={styles.news} key={news.index}>
 				<div className={styles.photo}>

@@ -4,6 +4,7 @@ import styles from './Article.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import { MDXRemote } from 'next-mdx-remote/rsc'
+import NewsMainPage from '@/app/components/News/NewsMainPage'
 
 export async function generateStaticParams() {
 	const news = await getAllNews()
@@ -40,7 +41,7 @@ export default async function ArticlePage({ params }) {
 						<p>{article.title}</p>
 					</div>
 
-					<h2 className={styles.title}>{article.title}</h2>
+					<h1 className={styles.title}>{article.title}</h1>
 				</div>
 				<div className={styles.entry}>
 					<div className={styles.info}>
@@ -69,10 +70,17 @@ export default async function ArticlePage({ params }) {
 							objectFit='cover'
 							objectPosition='center'
 						/>
+						<p className={styles.source}>{article.source}</p>
 					</div>
 				</div>
-				<MDXRemote source={article.content} className={styles.content} />
+				<div className={styles.content}>
+					<MDXRemote source={article.content} />
+				</div>
 			</article>
+			<p className={styles.recommended}>polecamy również:</p>
+			<div className={styles.news_container}>
+				<NewsMainPage currentSlug={slug} />
+			</div>
 		</Container>
 	)
 }
