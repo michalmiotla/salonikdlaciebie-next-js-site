@@ -115,6 +115,7 @@
 				text-align: center;
 				font-size: clamp(2rem, 1.914vw + 1.33rem, 2.8rem);
 				margin-top: 5rem;
+				color: var(--font-gray-color);
 			}
 
 			.hashtags {

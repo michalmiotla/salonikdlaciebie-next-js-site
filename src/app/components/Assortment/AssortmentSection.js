@@ -13,7 +13,7 @@ export default function AssortmentSection() {
 
 	return (
 		<Container>
-			<section className={styles.assortment_section}>
+			<section className={styles.assortment_section} id='asortyment'>
 				<SectionTitle title={'asortyment'} />
 				<div className={styles.assortment_container}>
 					<div className={styles.list}>

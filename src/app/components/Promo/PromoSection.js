@@ -7,14 +7,14 @@ import styles from './PromoSection.module.css'
 export default function PromoSection() {
 	return (
 		<Container>
-			<section className={styles.promo_section}>
+			<section className={styles.promo_section} id='promocje'>
 				<SectionTitle title={'promocje'} />
 				<div className={styles.promo_container}>
 					<PromoMainPage />
 					<PromoMainPage />
 				</div>
 
-				<SectionLink section={'promocje'} link={'promocje'} />
+				{/* <SectionLink section={'promocje'} link={'promocje'} /> */}
 			</section>
 		</Container>
 	)

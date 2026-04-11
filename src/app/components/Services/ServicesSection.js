@@ -7,7 +7,7 @@ import styles from './ServicesSection.module.css'
 export default function SercivesSection() {
 	return (
 		<Container>
-			<section className={styles.services_section}>
+			<section className={styles.services_section} id='uslugi'>
 				<SectionTitle title={'usługi'} />
 				<div className={styles.services_container}>
 					<div className={styles.description}>
@@ -63,7 +63,7 @@ export default function SercivesSection() {
 						/>
 					</div>
 				</div>
-				<SectionLink section={'usługi'} link={'uslugi'} />
+				{/* <SectionLink section={'usługi'} link={'uslugi'} /> */}
 			</section>
 		</Container>
 	)

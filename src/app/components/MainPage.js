@@ -4,6 +4,7 @@ import PromoSection from './Promo/PromoSection'
 import SercivesSection from './Services/ServicesSection'
 import AssortmentSection from './Assortment/AssortmentSection'
 import { Magazine } from './Magazine/Magazine'
+import Map from './Map/Map'
 
 export default function MainPage() {
 	return (
@@ -14,6 +15,7 @@ export default function MainPage() {
 			<PromoSection />
 			<SercivesSection />
 			<AssortmentSection />
+			<Map />
 		</>
 	)
 }

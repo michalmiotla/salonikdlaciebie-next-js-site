@@ -13,7 +13,7 @@ export default function NewsSection() {
 				<div className={styles.news_container}>
 					<NewsMainPage />
 				</div>
-				<SectionLink section={'aktualności'} link={'/aktualnosci'} />
+				{/* <SectionLink section={'aktualności'} link={'/aktualnosci'} /> */}
 			</section>
 		</Container>
 	)

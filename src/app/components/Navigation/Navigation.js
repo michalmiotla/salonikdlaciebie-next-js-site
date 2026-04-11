@@ -5,12 +5,15 @@ import Link from 'next/link'
 import Container from '../Container/Container'
 import LOGO from '../../../../public/logo.png'
 import { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
 import Burger from '../../assets/burger.svg'
 import Close from '../../assets/close.svg'
 
 export default function Navigation() {
 	const [isMobileNavShown, setIsMobileNavShown] = useState(false)
 	const [elementWidth, setElementWidth] = useState(window.innerWidth)
+
+	const pathname = usePathname()
 
 	function toggleNavigation() {
 		setIsMobileNavShown(!isMobileNavShown)
@@ -61,69 +64,65 @@ export default function Navigation() {
 						</div>
 						<ul>
 							<li>
-								<Link onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} href='/aktualnosci'>
+								<Link
+									onClick={() => setIsMobileNavShown(false)}
+									className={`${styles.navlinks} ${pathname.startsWith('/aktualnosci') ? styles.active : ''}`}
+									href='/aktualnosci'>
 									aktualności
 								</Link>
 							</li>
 							<li>
-								<a onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} to='/pakiety'>
+								<Link onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} href='/#promocje'>
 									promocje
-								</a>
+								</Link>
 							</li>
-
 							<li>
-								<a onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} to='/portfolio'>
+								<Link onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} href='/#uslugi'>
 									usługi
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} to='/kontakt'>
+								<Link onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} href='/#asortyment'>
 									asortyment
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} to='/kontakt'>
-									blog
-								</a>
-							</li>
-							<li>
-								<a onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} to='/kontakt'>
+								<Link onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} href='/#kontakt'>
 									kontakt
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>
 					<div className={`${isMobileNavShown ? styles.navbar_mobile_active : styles.navbar_mobile}`}>
 						<ul>
 							<li>
-								<a onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} to='/oferta'>
+								<Link
+									onClick={() => setIsMobileNavShown(false)}
+									className={`${styles.navlinks} ${pathname.startsWith('/aktualnosci') ? styles.active : ''}`}
+									href='/aktualnosci'>
 									aktualności
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} to='/pakiety'>
+								<Link onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} href='/#promocje'>
 									promocje
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} to='/portfolio'>
+								<Link onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} href='/#uslugi'>
 									usługi
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} to='/kontakt'>
+								<Link onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} href='/#asortyment'>
 									asortyment
-								</a>
+								</Link>
 							</li>
+
 							<li>
-								<a onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} to='/kontakt'>
-									blog
-								</a>
-							</li>
-							<li>
-								<a onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} to='/kontakt'>
+								<Link onClick={() => setIsMobileNavShown(false)} className={styles.navlinks} href='/#kontakt'>
 									kontakt
-								</a>
+								</Link>
 							</li>
 						</ul>
 					</div>
