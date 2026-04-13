@@ -8,7 +8,6 @@ import HeroReading from '../../../../public/reading.svg'
 import HeroGaming from '../../../../public/gaming.svg'
 import { useEffect, useState } from 'react'
 import Button from '../Button/Button'
-import Logo from '../../../../public/Kolporterbackground.png'
 
 export default function Hero() {
 	const [currentSlide, setCurrentSlide] = useState(0)
@@ -32,8 +31,8 @@ export default function Hero() {
 					<div className={styles.main_titles}>
 						{/* <Image className={styles.logo} src={Logo} alt='newsstand hero illustration' /> */}
 						<h1 className={styles.title}>KOLPORTER - twoje centrum informacji i drobnych przyjemności :)</h1>
-						<Button color={'yellow'} title={'znajdź salonik'} />
-						<Button color={'white'} title={'zobacz promocje'} />
+						<Button title={'znajdź salonik'} link={'#map'}></Button>
+						<Button title={'zobacz promocje'} link={'#promocje'}></Button>
 					</div>
 					<div className={styles.main_image_box}>
 						<Image className={styles.main_image} src={slides[currentSlide]} alt='newsstand hero illustration' />

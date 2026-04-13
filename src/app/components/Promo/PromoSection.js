@@ -13,8 +13,6 @@ export default function PromoSection() {
 					<PromoMainPage />
 					<PromoMainPage />
 				</div>
-
-				{/* <SectionLink section={'promocje'} link={'promocje'} /> */}
 			</section>
 		</Container>
 	)
