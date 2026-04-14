@@ -22,6 +22,7 @@ export default function SercivesSection() {
 						<Service
 							icon={'/bill.svg'}
 							title={'Płatności rachunków'}
+							delay={'0ms'}
 							description={
 								'U nas szybko i wygodnie opłacisz rachunki z niską prowizją, bez zbędnych formalności. Realizujemy przelewy dowolne, w tym opłaty do ZUS i KRUS. Przyjmujemy również płatności za mandaty oraz inne zobowiązania urzędowe. Wszystko w jednym miejscu, bez kolejek i stresu.'
 							}
@@ -29,6 +30,7 @@ export default function SercivesSection() {
 						<Service
 							icon={'/box.svg'}
 							title={'Obsługa paczek'}
+							delay={'1500ms'}
 							description={
 								'Nadaj lub odbierz paczkę szybko i bezproblemowo, także w opcji za pobraniem. Obsługujemy przesyłki krajowe i zagraniczne, dopasowane do Twoich potrzeb. Współpracujemy z renomowanymi firmami kurierskimi: DPD, UPS, GLS, FedEx, Allegro One. Jedno miejsce — wiele możliwości wysyłki.'
 							}
@@ -36,6 +38,7 @@ export default function SercivesSection() {
 						<Service
 							icon={'/card.svg'}
 							title={'Doładowania biletów miejskich'}
+							delay={'3000ms'}
 							description={
 								'Doładuj bilety miejskie szybko i dokładnie na taką liczbę dni, jakiej potrzebujesz. Obsługujemy doładowania aplikacji Lubika oraz umożliwiamy sprawdzenie daty ważności biletu. Cały proces zajmuje tylko chwilę i nie wymaga instalowania dodatkowych aplikacji. Wygodnie, jasno i bez komplikacji.'
 							}
@@ -43,6 +46,7 @@ export default function SercivesSection() {
 						<Service
 							icon={'/sim.svg'}
 							title={'Rejestracja kart SIM'}
+							delay={'0ms'}
 							description={
 								'Zarejestrujesz u nas karty SIM wszystkich najpopularniejszych sieci w Polsce. Pomagamy również obcokrajowcom — sprawnie i zgodnie z obowiązującymi przepisami. Cały proces jest szybki i bezpieczny. Wystarczy dokument, resztą zajmiemy się na miejscu.'
 							}
@@ -50,6 +54,7 @@ export default function SercivesSection() {
 						<Service
 							icon={'/receipt.svg'}
 							title={'Doładowania telefoniczne'}
+							delay={'1500ms'}
 							description={
 								'Oferujemy doładowania telefoniczne w wielu nominałach, dopasowanych do różnych potrzeb. Obsługujemy zarówno popularne sieci, jak i mniej znane, m.in. Telegrosik czy LycaMobile. Każda transakcja potwierdzona jest czytelnym wydrukiem. Szybko, przejrzyście i bez ukrytych kosztów.'
 							}
@@ -57,6 +62,7 @@ export default function SercivesSection() {
 						<Service
 							icon={'/game.svg'}
 							title={'Doładowania do gier'}
+							delay={'3000ms'}
 							description={
 								'Kupisz u nas paysafecard classic oraz paysafecard direct — idealne do bezpiecznych płatności online. Oferujemy również karty podarunkowe do Xbox, Steam, PlayStation i Fortnite. To świetne rozwiązanie dla graczy w każdym wieku. Bez konieczności używania karty płatniczej.'
 							}

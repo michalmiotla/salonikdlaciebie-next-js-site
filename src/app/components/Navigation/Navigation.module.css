@@ -152,7 +152,8 @@
 
 					li {
 						.navlinks {
-							font-size: clamp(1.4rem, 0.633vw + 0.914rem, 1.8rem);
+							font-size: 1.6rem;
+							/* font-size: clamp(1.4rem, 0.633vw + 0.914rem, 1.8rem); */
 							border: 0;
 						}
 					}

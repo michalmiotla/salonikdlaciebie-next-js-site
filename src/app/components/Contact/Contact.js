@@ -12,33 +12,33 @@ export default function Contact() {
 				<div className={styles.contact_container}>
 					<p className={styles.title}>Oficjalne źródła i kontakt *</p>
 					<div className={styles.box}>
-						<p>kolporter.com.pl</p>
+						<p className={styles.site}>kolporter.com.pl</p>
 						<p>Oficjalna strona firmy Kolporter Sp. z o.o.</p>
 					</div>
 					<div className={styles.box}>
-						<p>news.kolporter.com.pl</p>
+						<p className={styles.site}>news.kolporter.com.pl</p>
 						<p>Aktualności z życia firmy</p>
 					</div>
 					<div className={styles.box}>
-						<p>rynekprasowy.pl</p>
+						<p className={styles.site}>rynekprasowy.pl</p>
 						<p>Aktualności z rynku prasowego</p>
 					</div>
 					<div className={styles.box}>
-						<p>twojsalonik.pl</p>
+						<p className={styles.site}>twojsalonik.pl</p>
 						<p>Aktualne oferty pracy</p>
 					</div>
 					<div className={styles.box}>
-						<p>biuro@kolporter.com.pl</p>
+						<p className={styles.site}>biuro@kolporter.com.pl</p>
 						<p>Mailowy adres kontaktowy</p>
 					</div>
 					<div className={styles.box}>
-						<p>+48 41 367 88 88</p>
+						<p className={styles.site}>+48 41 367 88 88</p>
 						<p>Numer infolinii biura </p>
 					</div>
 					<p className={styles.description}>
 						* strona ma charakter informacyjny i nie jest oficjalną stroną sieci Saloników. Każdy Salonik posiada własny
-						numer i dane kontaktowe. W sprawach reklamacji, zamówień lub usług, prosimy kontaktować się bezpośrednio z
-						wybraną placówką lub z głównym oddziałem firmy.
+						numer i dane kontaktowe oraz adresy korespondencyjne i mailowe. W sprawach m.in. reklamacji, zamówień, usług lub współpracy,
+						prosimy kontaktować się bezpośrednio z wybraną placówką lub z głównym oddziałem firmy.
 					</p>
 				</div>
 			</section>

@@ -26,7 +26,8 @@
 			gap: 2rem;
 
 			p {
-				font-size: clamp(2rem, 1.914vw + 1.33rem, 2.8rem);
+				font-size: 2rem;
+				/* font-size: clamp(2rem, 1.914vw + 1.33rem, 2.8rem); */
 				font-weight: 400;
 				text-align: center;
 			}
