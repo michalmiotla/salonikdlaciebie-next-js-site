@@ -1,18 +1,17 @@
 .section_title {
 	position: relative;
 	p {
+		display: inline;
 		font-size: 3.6rem;
+		text-transform: uppercase;
+		padding-bottom: 1rem;
 		/* font-size: clamp(2.8rem, 1.914vw + 2.13rem, 3.6rem); */
 		font-weight: 700;
-	}
-
-	hr {
-		border: none;
-		border-top: 5px solid var(--theme-main-color);
+		border-bottom: 5px solid var(--theme-main-color);
 	}
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
 	.news_section {
 		.section_title {
 			hr {
@@ -20,4 +19,4 @@
 			}
 		}
 	}
-}
+} */

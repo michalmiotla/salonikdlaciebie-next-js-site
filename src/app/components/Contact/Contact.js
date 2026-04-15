@@ -20,6 +20,10 @@ export default function Contact() {
 						<p>Aktualności z życia firmy</p>
 					</div>
 					<div className={styles.box}>
+						<p className={styles.site}>dostawa.kolporter.com.pl</p>
+						<p>Lista tytułów w dzisiejszej dostawie prasy</p>
+					</div>
+					<div className={styles.box}>
 						<p className={styles.site}>rynekprasowy.pl</p>
 						<p>Aktualności z rynku prasowego</p>
 					</div>
@@ -37,8 +41,8 @@ export default function Contact() {
 					</div>
 					<p className={styles.description}>
 						* strona ma charakter informacyjny i nie jest oficjalną stroną sieci Saloników. Każdy Salonik posiada własny
-						numer i dane kontaktowe oraz adresy korespondencyjne i mailowe. W sprawach m.in. reklamacji, zamówień, usług lub współpracy,
-						prosimy kontaktować się bezpośrednio z wybraną placówką lub z głównym oddziałem firmy.
+						numer i dane kontaktowe oraz adresy korespondencyjne i mailowe. W sprawach m.in. reklamacji, zamówień, usług
+						lub współpracy, prosimy kontaktować się bezpośrednio z wybraną placówką lub z głównym oddziałem firmy.
 					</p>
 				</div>
 			</section>

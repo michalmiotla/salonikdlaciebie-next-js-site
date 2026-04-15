@@ -6,6 +6,10 @@
 	display: flex;
 	flex-direction: column;
 	margin-block: 2rem;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+	border-radius: 12px;
+	border-bottom: 5px solid var(--theme-main-color);
+
 	overflow: hidden;
 
 	.photo {
@@ -13,7 +17,6 @@
 		width: 100%;
 		height: 20rem;
 		overflow: hidden;
-		border-radius: 12px;
 
 		.img {
 			transition: transform 0.5s ease-in-out;

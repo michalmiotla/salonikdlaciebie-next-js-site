@@ -1,69 +1,78 @@
-.magazine {
+.magazine_section {
 	position: relative;
 	width: 100%;
-	height: 30rem;
 	display: flex;
 	flex-direction: column;
 	margin-top: 5rem;
 	padding: 2rem;
-	gap: 2rem;
-	background-color: rgb(247, 219, 0, 0.3);
-	cursor: pointer;
-	border-radius: 12px;
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-	/* border-bottom: 5px solid var(--theme-main-color); */
 
-	.description {
+	.magazine {
 		position: relative;
 		width: 100%;
+		height: 30rem;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+
+		padding: 2rem;
 		gap: 2rem;
-		padding-inline: 2rem;
-		text-align: center;
+		background-color: rgb(247, 219, 0, 0.3);
+		cursor: pointer;
+		border-radius: 12px;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+		border-bottom: 5px solid var(--theme-main-color);
 
-		.title {
-			font-size: 2.8rem;
-			/* font-size: clamp(2.8rem, 1.914vw + 2.13rem, 3.6rem); */
-			font-weight: 700;
-			color: black;
+		.description {
+			position: relative;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 2rem;
+			padding-inline: 2rem;
+			text-align: center;
+
+			.title {
+				font-size: 2.8rem;
+				/* font-size: clamp(2.8rem, 1.914vw + 2.13rem, 3.6rem); */
+				font-weight: 700;
+				color: black;
+			}
+
+			.paragraph {
+				display: none;
+				font-size: clamp(1.2rem, 0.381vw + 1.067rem, 1.6rem);
+				color: var(--font-gray-color);
+			}
 		}
 
-		.paragraph {
+		.arrow {
+			position: relative;
+			width: 10%;
 			display: none;
-			font-size: clamp(1.2rem, 0.381vw + 1.067rem, 1.6rem);
-			color: var(--font-gray-color);
+			justify-content: center;
+			align-items: center;
+
+			.right {
+				animation: move 3s ease-in-out infinite both;
+			}
+		}
+
+		.photo {
+			position: relative;
+			width: 100%;
+			height: 100%;
+
+			.img {
+				transform: scale(0.95);
+				transition: transform 0.5s ease-in-out;
+			}
 		}
 	}
 
-	.arrow {
-		position: relative;
-		width: 10%;
-		display: none;
-		justify-content: center;
-		align-items: center;
-
-		.right {
-			animation: move 3s ease-in-out infinite both;
-		}
+	.magazine:hover .photo .img {
+		transform: scale(1.03);
 	}
-
-	.photo {
-		position: relative;
-		width: 100%;
-		height: 100%;
-
-		.img {
-			transform: scale(0.95);
-			transition: transform 0.5s ease-in-out;
-		}
-	}
-}
-
-.magazine:hover .photo .img {
-	transform: scale(1.03);
 }
 
 @keyframes move {
@@ -83,38 +92,44 @@
 }
 
 @media screen and (min-width: 576px) {
-	.magazine {
-		flex-direction: row;
-		gap: 0;
+	.magazine_section {
+		.magazine {
+			flex-direction: row;
+			gap: 0;
 
-		.description {
-			width: 75%;
-			.paragraph {
-				display: flex;
+			.description {
+				width: 75%;
+				.paragraph {
+					display: flex;
+				}
 			}
-		}
 
-		.photo {
-			width: 25%;
+			.photo {
+				width: 25%;
+			}
 		}
 	}
 }
 
 @media screen and (min-width: 1024px) {
-	.magazine {
-		.description {
-			width: 65%;
-		}
-		.arrow {
-			display: flex;
+	.magazine_section {
+		.magazine {
+			.description {
+				width: 65%;
+			}
+			.arrow {
+				display: flex;
+			}
 		}
 	}
 }
 
 @media screen and (min-width: 1200px) {
-	.magazine {
-		.description {
-			padding-inline: 5rem;
+	.magazine_section {
+		.magazine {
+			.description {
+				padding-inline: 5rem;
+			}
 		}
 	}
 }

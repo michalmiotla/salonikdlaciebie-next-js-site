@@ -65,6 +65,10 @@ export default function AssortmentSection() {
 						</div>
 					</div>
 				</div>
+				<p className={styles.disclaimer}>
+					* asortyment poszczególnych Saloników może różnić się w zależności od wielkości i charakterystyki danego
+					punktu.
+				</p>
 			</section>
 		</Container>
 	)

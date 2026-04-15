@@ -10,14 +10,9 @@ export default function SercivesSection() {
 			<section className={styles.services_section} id='uslugi'>
 				<SectionTitle title={'usługi'} />
 				<div className={styles.services_container}>
-					<div className={styles.description}>
-						<p>
-							Salonik Prasowy “Kolporter” to idealne miejsce dla tych, którzy cenią sobie wygodę i szybkie załatwianie
-							codziennych spraw. To wygodny punkt, w którym m. in. opłacisz rachunki, doładujesz telefon lub odbierzesz
-							paczkę.
-						</p>
-						<p>Sprawdź, jakie usługi zrealizujesz w naszych punktach!</p>
-					</div>
+					{/* <div className={styles.description}>
+						<p>Te sprawy załatwisz w naszych punktach szybko i profesjonalnie - sprawdź szczegóły:</p>
+					</div> */}
 					<div className={styles.services}>
 						<Service
 							icon={'/bill.svg'}

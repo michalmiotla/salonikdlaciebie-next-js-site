@@ -13,6 +13,7 @@
 		justify-content: center;
 		align-items: center;
 		width: 100%;
+		margin-top: 5rem;
 
 		.description {
 			position: relative;
@@ -21,9 +22,7 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			padding: 2rem;
 			margin-top: 5rem;
-			gap: 2rem;
 
 			p {
 				font-size: 2rem;
@@ -34,7 +33,7 @@
 		}
 
 		.services {
-			padding: 5rem;
+			padding: 2rem;
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
