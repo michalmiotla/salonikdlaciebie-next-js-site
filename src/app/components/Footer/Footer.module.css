@@ -9,7 +9,7 @@
 	.wrapper {
 		position: relative;
 		width: 100%;
-		padding: 2rem;
+		padding: 3rem 2rem;
 		gap: 5rem;
 		display: flex;
 		flex-direction: column;
@@ -31,6 +31,7 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+			padding: 2rem;
 			gap: 2rem;
 
 			p {
@@ -47,6 +48,14 @@
 				justify-content: center;
 				align-items: center;
 				gap: 2rem;
+
+				.reference {
+					transition: transform 0.3s ease-in-out;
+				}
+
+				.reference:hover {
+					transform: translateY(-5px);
+				}
 			}
 		}
 
@@ -59,12 +68,34 @@
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
-				gap: 2rem;
+				gap: 1rem;
 				li {
 					.link {
+						position: relative;
 						font-size: 1.6em;
-						padding: 1rem;
 						color: white;
+					}
+
+					.link::before,
+					.link::after {
+						content: '';
+						position: absolute;
+						width: 0;
+						bottom: -8px;
+						border-bottom: 3px solid var(--theme-main-color);
+						transition: all 0.5s;
+					}
+
+					.link::before {
+						left: 50%;
+					}
+					.link::after {
+						right: 50%;
+					}
+
+					.link:hover::before,
+					.link:hover::after {
+						width: 50%;
 					}
 				}
 			}
@@ -74,17 +105,93 @@
 			position: relative;
 			width: 100%;
 			display: flex;
+			flex-direction: column;
 			justify-content: center;
 			align-items: center;
 			text-align: center;
+			padding: 1rem;
+			gap: 2rem;
 
-			p {
+			.description {
+				position: relative;
+				display: inline-block;
 				font-size: 1.6rem;
+			}
+
+			.mail {
+				position: relative;
+				display: inline-block;
+				cursor: pointer;
+				font-size: 1.6rem;
+
+				.alert {
+					position: absolute;
+					top: 30px;
+					left: 50%;
+					transform: translateX(-50%);
+					background: var(--theme-main-color);
+					color: black;
+					padding: 0.5rem 1rem;
+					border-radius: 12px;
+					font-size: 1.4rem;
+				}
+			}
+
+			.mail::before,
+			.mail::after {
+				content: '';
+				position: absolute;
+				width: 0;
+				bottom: -8px;
+				border-bottom: 3px solid var(--theme-main-color);
+				transition: all 0.5s;
+			}
+
+			.mail::before {
+				left: 50%;
+			}
+			.mail::after {
+				right: 50%;
+			}
+
+			.mail:hover::before,
+			.mail:hover::after {
+				width: 50%;
 			}
 		}
 	}
 }
 
-@media screen and  {
-	
+@media screen and (min-width: 968px) {
+	.footer {
+		.wrapper {
+			flex-direction: row;
+			justify-content: space-between;
+			gap: 0;
+			padding-inline: 0;
+			height: 20rem;
+
+			.logo_container {
+				height: 100%;
+				border-right: 1px solid rgb(247, 219, 0, 0.3);
+			}
+			.socials_container {
+				height: 100%;
+				border-right: 1px solid rgb(247, 219, 0, 0.3);
+			}
+
+			.links {
+				height: 100%;
+				border-right: 1px solid rgb(247, 219, 0, 0.3);
+
+				ul {
+					height: 100%;
+					justify-content: space-between;
+				}
+			}
+
+			.disclaimer {
+			}
+		}
+	}
 }

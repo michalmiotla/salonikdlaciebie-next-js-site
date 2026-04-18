@@ -55,8 +55,23 @@
 			}
 
 			.site {
+				position: relative;
+				display: inline-block;
 				font-size: 1.8rem;
 				font-weight: 700;
+
+				.alert {
+					z-index: 10;
+					position: absolute;
+					top: 30px;
+					left: 50%;
+					transform: translateX(-50%);
+					background: black;
+					color: var(--theme-main-color);
+					padding: 0.5rem 1rem;
+					border-radius: 12px;
+					font-size: 1.4rem;
+				}
 			}
 
 			.site::before,
