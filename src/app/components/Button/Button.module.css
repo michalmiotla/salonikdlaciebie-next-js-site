@@ -3,7 +3,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 90%;
+	width: 100%;
 	font-size: clamp(1.6rem, 1.143vw + 1.2rem, 2.8rem);
 	font-weight: 700;
 	background-color: var(--button-main-color);
@@ -51,7 +51,7 @@
 	}
 }
 
-@media screen and (min-width: 576px) {
+/* @media screen and (min-width: 576px) {
 	.button {
 		width: 75%;
 	}
@@ -66,4 +66,4 @@
 	.button {
 		width: 90%;
 	}
-}
+} */
