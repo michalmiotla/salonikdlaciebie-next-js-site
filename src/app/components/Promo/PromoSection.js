@@ -10,8 +10,9 @@ export default function PromoSection() {
 			<section className={styles.promo_section} id='promocje'>
 				<SectionTitle title={'promocje'} />
 				<div className={styles.promo_container}>
-					<PromoMainPage />
-					<PromoMainPage />
+					<PromoMainPage src='/promo1.png' />
+					<PromoMainPage src='/promo2.png' />
+					<PromoMainPage src='/promo3.png' />
 				</div>
 			</section>
 		</Container>

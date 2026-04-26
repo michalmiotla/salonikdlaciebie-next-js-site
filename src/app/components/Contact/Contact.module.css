@@ -3,7 +3,7 @@
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	margin-top: 5rem;
+	margin-top: 10rem;
 	padding: 2rem;
 
 	.contact_container {
@@ -19,6 +19,7 @@
 		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 		border-bottom: 5px solid var(--theme-main-color);
 		gap: 1rem;
+		background-color: rgb(247, 219, 0, 0.05);
 
 		.title {
 			font-weight: 700;

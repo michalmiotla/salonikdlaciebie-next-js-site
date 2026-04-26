@@ -11,6 +11,7 @@
 	border-radius: 12px;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 	border-bottom: 5px solid var(--theme-main-color);
+	background-color: rgb(247, 219, 0, 0.05);
 
 	.title {
 		font-weight: 700;

@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Container from '../Container/Container'
 import styles from './Magazine.module.css'
 import Link from 'next/link'
+import SectionLink from '../SectionLink/SectionLink'
 
 export function Magazine() {
 	return (
@@ -40,6 +41,7 @@ export function Magazine() {
 						</div>
 					</div>
 				</Link>
+				<SectionLink section={'więcej aktualności'} link={'/aktualnosci'} />
 			</div>
 		</Container>
 	)

@@ -1,21 +1,11 @@
-.promo {
+.image_box {
 	position: relative;
 	width: 100%;
-	display: flex;
-	flex-direction: column;
-	margin-block: 2rem;
+	aspect-ratio: 2 /1;
 
-	.image_box {
-		position: relative;
-		width: 100%;
-		aspect-ratio: 6 /1;
-		box-shadow: none;
-		transition: box-shadow 0.5s;
-	}
-
-	.image_box:hover {
-		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-		cursor: pointer;
+	.img {
+		border-radius: 20px;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
 	}
 }
 

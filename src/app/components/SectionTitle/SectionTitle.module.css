@@ -1,5 +1,7 @@
 .section_title {
 	position: relative;
+	margin-block: 5rem;
+
 	p {
 		display: inline;
 		font-size: 3.6rem;
