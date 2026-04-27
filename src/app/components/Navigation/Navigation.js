@@ -11,12 +11,12 @@ import Close from '../../assets/close.svg'
 
 export default function Navigation() {
 	const [isMobileNavShown, setIsMobileNavShown] = useState(false)
-	const [elementWidth, setElementWidth] = useState(window.innerWidth)
+	const [elementWidth, setElementWidth] = useState(0)
 
 	const pathname = usePathname()
 
 	function toggleNavigation() {
-		setIsMobileNavShown(!isMobileNavShown)
+		setIsMobileNavShown(prev => !prev)
 	}
 
 	function backToTop() {
@@ -26,16 +26,23 @@ export default function Navigation() {
 
 	useEffect(() => {
 		const handleResize = () => {
-			setElementWidth(window.innerWidth)
+			const width = window.innerWidth
+
+			setElementWidth(width)
+
+			if (width > 768) {
+				setIsMobileNavShown(false)
+			}
 		}
 
-		elementWidth > 768 && setIsMobileNavShown(false)
+		handleResize()
 
 		window.addEventListener('resize', handleResize)
+
 		return () => {
 			window.removeEventListener('resize', handleResize)
 		}
-	}, [elementWidth])
+	}, [])
 
 	return (
 		<nav className={styles.navSection}>
