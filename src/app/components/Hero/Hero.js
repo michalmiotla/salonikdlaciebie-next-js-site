@@ -12,19 +12,7 @@ import Button from '../Button/Button'
 import Bar from '../Bar/Bar'
 
 export default function Hero() {
-	// const [currentSlide, setCurrentSlide] = useState(0)
-
-	// const slides = [HeroNewsstand, HeroReading, HeroGaming]
-
-	// useEffect(() => {
-	// 	const interval = setInterval(() => {
-	// 		setCurrentSlide(prev => (prev + 1) % slides.length)
-	// 	}, 10000)
-
-	// 	return () => clearInterval(interval)
-	// }, [])
-
-	// const slide = slides[currentSlide]
+	
 
 	return (
 		<>
