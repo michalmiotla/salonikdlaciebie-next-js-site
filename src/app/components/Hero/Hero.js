@@ -2,18 +2,10 @@
 
 import Container from '../Container/Container'
 import styles from './Hero.module.css'
-import Image from 'next/image'
-import HeroNewsstand from '../../../../public/newsstand.svg'
-import HeroReading from '../../../../public/reading.svg'
-import HeroGaming from '../../../../public/gaming.svg'
-import HeroImg from '../../../../public/salonik.jpg'
-import { useEffect, useState } from 'react'
 import Button from '../Button/Button'
 import Bar from '../Bar/Bar'
 
 export default function Hero() {
-	
-
 	return (
 		<>
 			<div className={styles.hero}>
@@ -21,7 +13,6 @@ export default function Hero() {
 				<div className={styles.gradient}></div>
 				<Container>
 					<div className={styles.main}>
-						{/* <Image className={styles.logo} src={Logo} alt='newsstand hero illustration' /> */}
 						<div className={styles.titles}>
 							<h1 className={styles.title}>
 								<span>Twoje</span> źródło informacji i drobnych przyjemności :)

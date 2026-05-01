@@ -1,5 +1,5 @@
 import Container from '../Container/Container'
-import SectionLink from '../SectionLink/SectionLink'
+
 import SectionTitle from '../SectionTitle/SectionTitle'
 import PromoMainPage from './PromoMainPage'
 import styles from './PromoSection.module.css'
