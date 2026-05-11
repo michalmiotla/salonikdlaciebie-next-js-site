@@ -13,6 +13,7 @@ export default function PromoSection() {
 					<PromoMainPage src='/promo1.png' />
 					<PromoMainPage src='/promo2.png' />
 					<PromoMainPage src='/promo3.png' />
+					<PromoMainPage src='/promo4.png' />
 				</div>
 			</section>
 		</Container>
